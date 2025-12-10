@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>all about the forms</title>
+</head>
+
+<body>
+    <h1>just a form to fill your info</h1>
+    <form action="post">
+        <div>
+            <label for="username">username</label>
+            <input type="text" name="username" placeholder="enter your name" autofocus>
+            <label for="password">password</label>
+            <input type="password" name="password" placeholder="enter your password" required>
+        </div>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="agree" name="subscribe" values="yes">
+            <label for="agree">agree</label>
+        </div>
+        <div>
+            <textarea name="comment" roes="10" cols="10">
+                enter any comment
+            </textarea>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">banana</option>
+                <option value="berry">berry</option>
+            </select>
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>
