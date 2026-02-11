@@ -16,5 +16,8 @@ var outwear='Shirt';
 
 function poterview(){
     var outwear='sweat';
+
+
 }
-console.log()
+
+console.log();
