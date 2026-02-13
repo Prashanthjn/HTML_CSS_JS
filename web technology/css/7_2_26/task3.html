@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{margin:0;padding:0;box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{background-color:rgb(122, 212, 248);color:#000;}
+
+        header{ background: linear-gradient(135deg,bisque,rgb(12, 12, 211)); text-align: center;}
+        header h1{font-size: 36px;}
+        header p{margin-top: 10px;font-size: 18px;}
+
+        nav{background: #000; padding: 10px;text-align: center;}
+
+        nav a {color:white;margin: 0 15px; text-decoration: none;}
+        nav a:hover{color:red;}
+
+        section{padding: 50px 20px;max-width: 1000px;margin: auto;}
+        section h2{text-align: center;}
+        
+        .about{text-align: center;}
+        .skills{display: grid;gap: 12px;text-align: center; grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+        .skill{background: white; padding: 10px; border-radius: 20px;
+            box-shadow: 0 4px 10px grey;
+        }
+
+        .projects{display: grid; gap: 20px; grid-template-columns: repeat(auto-fit,mainmax(250px,1fr));}
+        .project{background: white; padding: 0;}
+    </style>
+</head>
+<body>
+    <header >
+        <h1>Prashanth J N</h1>
+        <p>Web Development</p>
+    </header>
+    <nav>
+        <a href="">ABOUT</a>
+        <a href="">SKILLS</a>
+        <a href="">PROJECT</a>
+        <a href="">CONTACT</a>
+
+    </nav>
+<section id ="about">
+    <h2>ABOUT ME</h2>
+    <p class="about">i enjoy building user-friendly web applications</p>
+</section>
+        <section>
+            <h2>SKILLS</h2>
+            <div class="skill">
+                <div class="skill">python</div>
+                <div class="skill">java</div>
+                <div class="skill">C++</div>
+                <div class="skill">C</div>
+                <div class="skill">react.js</div>
+                <div class="skill">web tch</div>
+            </div>
+        </section>
+<section id="project">
+    <h2>PROJECT</h2>
+<div class="project">
+    <div class="project">
+        <h3>TO DO APPLICATION</h3>
+        <p>task manager using html,css &javascript</p>
+        <button onclick="alert('projct demo')">VIEW</button>
+
+    </div>
+</div>
+</section>
+
+<section id="contact">
+    <h2>CONTACT</h2>
+    <div class="contact">
+        <input type="text" placeholder="your name">
+        <input type="email" placeholder="enter your email I'd">
+        <textarea rows="5" placeholder="write your message "></textarea>
+<br>
+     <button onclick="sendmessage()">send message!</button>
+    </div>
+</section>
+    <footer>2026 prashanth j n | all rights are reserved</footer>
+    <script>
+    function sendMessage(){alert("your message has been sent!");}</script>
+</body>
+</html>

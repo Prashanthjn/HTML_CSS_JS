@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            background: radial-gradient(rgb(89, 0, 253),rgb(252, 187, 198));
+         
+        .clock{
+            padding: 20px 89px;
+            background: #000;
+            border-radius: 15px;
+            letter-spacing: 3px;
+            box-shadow: 0 0 30px beige;
+            color: rgb(235, 230, 192);
+
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div class="clock" id="clock">00:00:00</div>
+    <script>
+        function Time(){
+            let time=new Date();
+            let h=time.getHours();
+            let m=time.getMinutes();
+            let s=time.getSeconds();
+
+            h=(h<10)?"0"+h:h;
+            m=(m<10)?"0"+m:m;
+            s=(s<10)?"0"+s:s;
+
+            document.getElementById("clock").innerHTML=h+":"+m+":"+s;
+        }
+
+        setInterval(Time,1000);
+        Time();
+
+    </script>
+</body>
+</html>
