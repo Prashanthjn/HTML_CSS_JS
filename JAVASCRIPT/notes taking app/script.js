@@ -1,4 +1,4 @@
-let notes=[];
+let notes=JSON.parse(localStorage.getItems("notes"))||[];
 ninp = document.getElementById("noteInput");
 addbtn = document.getElementById("AddNoteBtn");
 notescont = document.getElementById("notesContainer");
